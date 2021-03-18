@@ -36,8 +36,11 @@ jobs:
         with:
             cmd: install
             
+      - name: Build React App
+        run: sudo yarn build    
+        
       - name: installing surge
         run: npm install -g surge
         
       - name: deploy on surge
-        run: surge ./build standing-beetle001.surge.sh --token ${{secrets.C1_TOKEN}}
+        run: surge ./build cowardly-distribution.surge.sh --token ${{secrets.C1_TOKEN}}
