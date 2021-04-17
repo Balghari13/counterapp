@@ -43,4 +43,4 @@ jobs:
         run: npm install -g surge
         
       - name: deploy on surge
-        run: surge ./build cowardly-distribution.surge.sh --token ${{secrets.C1_TOKEN}}
+        run: surge ./build balghari13-expense-tracker-01.surge.sh --token ${{secrets.C1_TOKEN}}
